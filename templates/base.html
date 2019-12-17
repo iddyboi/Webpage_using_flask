@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/main.css')}} "
+    />
+    <title>Profile page</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- start of navigaiton -->
+      <div class="nav">
+        <ul class="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </div>
+      {% block body %} {% endblock %}
+      <!-- second block -->
+      {% block secondSection %}{% endblock %}
+    </div>
+
+    {% block contact %}{% endblock %}
+
+    <script src="{{url_for('static', filename = 'js/index.js')}}"></script>
+  </body>
+</html>
