@@ -80,3 +80,11 @@ a:hover {
 .git-link {
   color: #fff;
 }
+
+.forms {
+  margin: 150px auto;
+}
+.form-content {
+  padding: 50px;
+  margin: 30px auto;
+}
