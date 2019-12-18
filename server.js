@@ -9,5 +9,3 @@ client.messages
   .list()
   .then(messages => console.log(`most recent message is ${messages[0].body}`))
   .catch(err => console.error(err));
-
-console.log("Gathering infomation");
